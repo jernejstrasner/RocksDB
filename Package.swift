@@ -1,3 +1,4 @@
+// swift-tools-version:4.0
 /*
  * Package.swift
  * Copyright (c) 2016 Ben Gollmer.
@@ -14,11 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import PackageDescription
 
 let package = Package(
   name: "RocksDB",
   dependencies: [
-    .Package(url: "https://github.com/jatoben/CRocksDB", majorVersion: 1)
+//    .package(url: "../CRocksDB", .branch("master"))
+    .package(url: "https://github.com/jernejstrasner/CRocksDB.git", .branch("master"))
+  ],
+  targets: [
+    .target(
+        name: "RocksDB"
+     )
   ]
 )

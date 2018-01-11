@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CRocksDB",
+        "repositoryURL": "https://github.com/jernejstrasner/CRocksDB.git",
+        "state": {
+          "branch": "master",
+          "revision": "bd90b289d5ae2a804db6dac7661cee4119037967",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
