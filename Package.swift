@@ -20,8 +20,13 @@ import PackageDescription
 
 let package = Package(
   name: "RocksDB",
+  products: [
+    .library(
+        name: "RocksDB",
+        targets: ["RocksDB"]
+    )
+  ],
   dependencies: [
-//    .package(url: "../CRocksDB", .branch("master"))
     .package(url: "https://github.com/jernejstrasner/CRocksDB.git", .branch("master"))
   ],
   targets: [
