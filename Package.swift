@@ -32,6 +32,10 @@ let package = Package(
   targets: [
     .target(
         name: "RocksDB"
-     )
+    ),
+    .testTarget(
+        name: "RocksDBTests",
+        dependencies: ["RocksDB"]
+    )
   ]
 )
